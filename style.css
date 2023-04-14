@@ -42,6 +42,10 @@ header ul li a {
   color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 #under-header {
   position: fixed;
   width: 100vw;
