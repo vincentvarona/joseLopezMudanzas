@@ -57,6 +57,16 @@ a {
   z-index: 9999;
 }
 
+#under-header {
+  text-decoration: none;
+  color: white;
+}
+
+#box #numbers {
+  color: red;
+  text-decoration: none
+}
+
 #main-screen {
   width: 100%;
   height: 100vh;
