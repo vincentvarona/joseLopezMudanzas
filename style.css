@@ -67,7 +67,7 @@ a {
   text-decoration: none
 }
 
-#main-screen {
+#main-screen{
   width: 100%;
   height: 100vh;
   background-image: url(mudanza.jpg);
@@ -81,7 +81,26 @@ a {
   text-align: center;
 }
 
-#main-screen #box {
+#main-screen-2 {
+  background-image: url(mudanza-box.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  text-align: center;
+}
+
+#main-screen-2 #box {
+ height: 200vh;
+}
+
+
+#main-screen #box, #main-screen-2 #box {
   width: 500px;
   height: 200px;
   border:1px solid white;
@@ -95,23 +114,23 @@ a {
   color: white;
 }
 
-#main-screen #box h2 {
+#main-screen #box h2, #main-screen-2 #box h2 {
   font-family: 'Lexend', sans-serif;
   font-size: 40px;
 }
 
-#main-screen #box h3 {
+#main-screen #box h3, #main-screen-2 #box h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
 }
 
-#main-screen #box #call-us {
+#main-screen #box #call-us, #main-screen-2 #box #call-us {
   color: white;
   font-size: 20px;
   text-decoration: underline;
 }
 
-#main-screen #box h4 {
+#main-screen #box h4, #main-screen-2 #box h4 {
   font-family: 'Lexend', sans-serif;
   color: red;
 }
@@ -176,7 +195,7 @@ a {
   margin: 10px 5px;
   width: 400px;
   height: 200px;
-  background-image: url("mudanza-box.jpg");
+  background-image: url("mudanza-2.jpg");
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   transition: transform 0.2s ease-in-out;
@@ -238,7 +257,7 @@ a {
 .footer {
   background-color: #395f85;
   color: #fff;
-  height: 600px;
+  height: 800px;
 }
 
 .container {
@@ -279,6 +298,11 @@ h2 {
   height: 250px;
 }
 
+.footer .contact-numbers a{
+  color: white;
+  text-decoration: underline;
+}
+
 
 
 @media only screen and (max-width: 768px){
@@ -310,16 +334,16 @@ header #menu-desp {
           animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-#main-screen {
+#main-screen, #main-screen-2 {
   height: 120vh;
 }
 
-#main-screen #box {
+#main-screen #box, #main-screen-2 #box {
   width: 300px;
   height: 300px;
 }
 
-#main-screen #box h3 {
+#main-screen #box h3,#main-screen-2 #box h3 {
   margin-top: 5px;
   font-size: 15px;
 }
