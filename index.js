@@ -1,8 +1,28 @@
 const botonHamburguesa = document.querySelector('#logo-hamb');
 const menu = document.querySelector('#menu-desp');
+var items = document.querySelectorAll('.item');
+
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener('click', function() {
+    for (var j = 0; j < items.length; j++) {
+      if (items[j] != this) {
+        items[j].classList.remove('ampliado');
+        items[j].querySelector('.info').style.height = 0;
+      }
+    }
+    this.classList.toggle('ampliado');
+    var info = this.querySelector('.info');
+    if (this.classList.contains('ampliado')) {
+      info.style.height = info.scrollHeight + 'px';
+    } else {
+      info.style.height = 0;
+    }
+  });
+}
+
+
 
 let menuVisible = false;
-
 botonHamburguesa.addEventListener('click', () => {
   if (menuVisible) {
     menu.style.display = "none";
@@ -35,3 +55,5 @@ function animarTelefono() {
 }
 
 setTimeout(animarTelefono, 5000); // Llamar a la función después de 5 segundos
+
+
