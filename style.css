@@ -51,7 +51,7 @@ a {
 #under-header {
   position: fixed;
   width: 100vw;
-  background-color: red;
+  background-color: #8f5442;
   font-family: 'Poppins', sans-serif;
   color: white;
   text-align: center;
@@ -65,8 +65,8 @@ a {
 }
 
 #box #numbers {
-  color: red;
-  text-decoration: none
+  color:#8f5442;
+  text-decoration: none;
 }
 
 #main-screen{
@@ -115,7 +115,7 @@ a {
 
 #main-screen #box h4 {
   font-family: 'Lexend', sans-serif;
-  color: red;
+  color: black;
 }
 
 #main-screen-2 {
@@ -175,7 +175,19 @@ a {
   justify-content: center;
 }
 
-#advantages #box-info {
+#advantages-2 {
+  width: 100%;
+  height: 150vh;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: url("mudanza-6.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+
+#advantages #box-info, #advantages-2 #box-info {
   width: 500px;
   height: 150px;
   border:1px solid white;
@@ -215,14 +227,14 @@ a {
   color: black;
 }
 
-#advantages .flex-container {
+#advantages .flex-container, #advantages-2 .flex-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 120px;
 }
 
-#advantages .box {
+#advantages .box, #advantages-2 .box{
   margin: 10px 5px;
   width: 400px;
   height: 200px;
@@ -240,19 +252,19 @@ a {
   border-radius: 5px;
 }
 
-#advantages .box:hover, #pros .box:hover {
+#advantages .box:hover, #pros .box:hover, #advantages-2 .box:hover {
   transform: scale(1.1);
   z-index: 2;
 }
 
-#advantages .box h3 {
+#advantages .box h3, #advantages-2 .box h3 {
   font-family: 'Lexend', sans-serif;
   font-size: 25px;
   color: white;
   text-align: center;
 }
 
-#advantages .box p {
+#advantages .box p, #advantages-2 .box p {
   text-align: center;
   font-family: 'Lexend', sans-serif;
   color: white;
@@ -270,10 +282,12 @@ a {
   background-attachment: fixed;
   background-size: cover;
   display: flex;
-  flex-direction: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
+
 
 #services ul {
   display: flex;
@@ -317,6 +331,19 @@ a {
   color: white;
   margin: 0 auto;
   margin-top: 10px;
+}
+
+#contact {
+  min-width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(mudanza-4.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #pre-foot {
@@ -395,8 +422,6 @@ h2 {
   color: white;
   text-decoration: underline;
 }
-
-
 
 @media only screen and (max-width: 768px){
 
@@ -480,6 +505,15 @@ header #menu-desp {
   height: 200px;
 }
 
+#advantages-2{
+  height: 450vh;
+}
+
+#advantages-2 .box{
+  width: 250px;
+  height: 300px;
+}
+
 .dropdown > li {
   position: relative;
   display: inline-block;
@@ -522,6 +556,7 @@ header #menu-desp {
   background-color: #395f85;
   color: #fff;
   height: 780px;
+  min-width: 100vw;
 }
 
 .footer iframe {

@@ -2,6 +2,7 @@ const botonHamburguesa = document.querySelector('#logo-hamb');
 const menu = document.querySelector('#menu-desp');
 var items = document.querySelectorAll('.item');
 
+
 for (var i = 0; i < items.length; i++) {
   items[i].addEventListener('click', function() {
     for (var j = 0; j < items.length; j++) {
@@ -47,13 +48,13 @@ function animarTelefono() {
 
     if (indice >= texto.length) {
       clearInterval(intervalo);
-      setTimeout(animarTelefono, 5000); // Llamar a la función de nuevo después de 5 segundos
+      setTimeout(animarTelefono, 5000);
     }
   }
 
   const intervalo = setInterval(agregarCaracter, 100);
 }
 
-setTimeout(animarTelefono, 5000); // Llamar a la función después de 5 segundos
+setTimeout(animarTelefono, 5000); 
 
 
