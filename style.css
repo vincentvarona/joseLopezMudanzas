@@ -72,7 +72,7 @@ a {
 #main-screen{
   width: 100%;
   height: 100vh;
-  background-image: url(mudanza.jpg);
+  background-image: url(img/mudanza.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -119,7 +119,7 @@ a {
 }
 
 #main-screen-2 {
-  background-image: url(mudanza-box.jpg);
+  background-image: url(img/mudanza-box.jpg);
   width: 100%;
   height: 160vh;
   background-position: center top;
@@ -182,7 +182,7 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
-  background-image: url("mudanza-6.jpg");
+  background-image: url("img/mudanza-6.jpg");
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
 }
@@ -238,7 +238,7 @@ a {
   margin: 10px 5px;
   width: 400px;
   height: 200px;
-  background-image: url("mudanza-2.jpg");
+  background-image: url("img/mudanza-2.jpg");
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   transition: transform 0.2s ease-in-out;
@@ -342,7 +342,7 @@ input[type="submit"]:hover {
 #services {
   width: 100%;
   height: 310vh;
-  background-image: url(mudanza-serv.jpg);
+  background-image: url(img/mudanza-serv.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -405,7 +405,7 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(mudanza-4.jpg);
+  background-image: url(img/mudanza-4.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -633,7 +633,7 @@ header #menu-desp {
 #services {
   width: 100%;
   height: 320vh;
-  background-image: url(mudanza-serv.jpg);
+  background-image: url(img/mudanza-serv.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
